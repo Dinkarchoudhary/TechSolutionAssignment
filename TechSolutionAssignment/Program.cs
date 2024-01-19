@@ -12,9 +12,9 @@ public class Program
     /// <param name="args">Command-line arguments.</param>
     public static void Main(string[] args)
     {
-        var numbers = new List<int> { 1, 2, 3, 4, 5 };
-        var processor = new NumberProcessor();
-        var result = processor.ProcessNumbers(numbers);
-        Console.WriteLine(string.Join(", ", result));
+        var inputNumbers = new List<int> { 1, 2, 3, 4, 5 };
+        var numberProcessor = new NumberProcessor();
+        var processedNumbers = numberProcessor.ProcessNumbers(inputNumbers);
+        Console.WriteLine($"Processed Numbers: {string.Join(", ", processedNumbers)}");
     }
 }

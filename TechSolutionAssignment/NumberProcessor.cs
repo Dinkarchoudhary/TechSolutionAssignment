@@ -10,14 +10,16 @@ public class NumberProcessor
     /// <returns>A new list containing the processed numbers.</returns>
     public List<int> ProcessNumbers(List<int> inputNumbers)
     {
-        List<int> resultNumbers = new List<int>();
+        //List<int> resultNumbers = new List<int>();
 
-        foreach (var number in inputNumbers)
-        {
-            resultNumbers.Add(MultiplyByTwo(number));
-        }
+        //foreach (var number in inputNumbers)
+        //{
+        //    resultNumbers.Add(MultiplyByTwo(number));
+        //}
 
-        return resultNumbers;
+        //return resultNumbers;
+
+        return inputNumbers.Select(MultiplyByTwo).ToList();
     }
 
     /// <summary>
